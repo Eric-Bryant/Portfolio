@@ -160,7 +160,7 @@ img {
 
 .header {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .header .logo {
@@ -170,11 +170,6 @@ img {
 .header .logo h1 {
   font-size: 1.5rem;
   line-height: 1;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
 }
 
 @media screen and (max-width: 767px) {
