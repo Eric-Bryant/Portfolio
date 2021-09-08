@@ -35,7 +35,7 @@
                     <ul>
                         <li><a href="#projects">Projects</a></li>
                         <!-- <li><a href="#about">About</a></li> -->
-                        <!-- <li><a href="#contact">Contact</a></li> -->
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -53,7 +53,7 @@
             <ul>
                 <li><a href="#projects">Projects</a></li>
                 <!-- <li><a href="#about">About</a></li> -->
-                <!-- <li><a href="#contact">Contact</a></li> -->
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -123,6 +123,33 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="spd-5" id="contact">
+        <div class="container container--tabletWidth">
+            <h2 class="text-center">Contact Me</h2>
+            <p class="text-center">Questions or have a project in mind? Let me know using the form below!</p>
+            <form class="contact-form" name="contact" netlify data-netlify-recaptcha="true">
+                <p>
+                    <label>Name <span>*</span><br />
+                        <input type="text" name="name" required /></label>
+                </p>
+                <p>
+                    <label>Email <span>*</span><br />
+                        <input type="email" name="email" required /></label>
+                </p>
+                <p>
+                    <label>Message <span>*</span><br />
+                        <textarea rows="4" name="message" required></textarea>
+                    </label>
+                </p>
+                <p>
+                <div data-netlify-recaptcha="true"></div>
+                </p>
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
         </div>
     </section>
     <footer class="footer-wrapper spd-1">
