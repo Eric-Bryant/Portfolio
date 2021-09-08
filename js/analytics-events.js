@@ -1,5 +1,5 @@
 const links = document.querySelectorAll('body a')
-const contactForm = document.querySelector('.contact-form');
+const contactForm = document.querySelector('.contact-form')
 
 links.forEach((link) => {
   let linkCheck = new RegExp('/' + window.location.host + '/')
@@ -13,8 +13,9 @@ links.forEach((link) => {
   })
 })
 
-contactForm.addEventListener('submit', function() {
+contactForm.addEventListener('submit', function () {
   gtag('event', 'Form Submission', {
     event_category: 'Forms',
     event_label: 'Contact Eric Form',
-});
+  })
+})
