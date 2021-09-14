@@ -370,7 +370,7 @@ picture {
 }
 
 .nowebp .hero-section {
-  background: url('../images/webp/hero-background.webp');
+  background: url('../images/hero-background.jpg');
 }
 
 .overlay {
