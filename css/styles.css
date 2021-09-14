@@ -104,7 +104,8 @@ p:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-img {
+img,
+picture {
   max-width: 100%;
 }
 
