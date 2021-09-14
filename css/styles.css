@@ -262,6 +262,7 @@ img {
 
 .mobile-navigation .menu-toggle {
   line-height: 0;
+  height: 1.25rem;
 }
 
 .mobile-menu ul {
