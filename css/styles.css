@@ -366,6 +366,10 @@ picture {
   margin-top: 3.5rem;
 }
 
+.webp .hero-section {
+  background: url('../images/webp/hero-background.webp');
+}
+
 .overlay {
   width: 100%;
   height: 100%;
