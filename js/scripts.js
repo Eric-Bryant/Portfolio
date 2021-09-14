@@ -35,7 +35,7 @@ themeToggle.addEventListener('click', function () {
   localStorage.setItem('theme', theme)
 })
 
-heroSection.style.marginTop = navigationWrapper.offsetHeight + 'px'
+// heroSection.style.marginTop = navigationWrapper.offsetHeight + 'px'
 
 menuToggle.addEventListener('click', function () {
   mobileMenu.classList.contains('open')
