@@ -357,7 +357,6 @@ picture {
 }
 
 .hero-section {
-  background: url('../images/hero-background.jpg');
   background-size: cover;
   position: relative;
   min-height: 150px;
@@ -367,6 +366,10 @@ picture {
 }
 
 .webp .hero-section {
+  background: url('../images/webp/hero-background.webp');
+}
+
+.nowebp .hero-section {
   background: url('../images/webp/hero-background.webp');
 }
 
