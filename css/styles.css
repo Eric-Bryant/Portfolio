@@ -271,6 +271,10 @@ img {
   background: var(--primarySurface);
 }
 
+.dark-theme .mobile-menu ul {
+  background: #202020;
+}
+
 .mobile-menu li a {
   transition: 0.3s ease all;
   display: block;
