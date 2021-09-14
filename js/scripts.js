@@ -17,15 +17,17 @@ if (!currentTheme) {
   }
 } else if (currentTheme == 'dark') {
   document.body.classList.toggle('dark-theme')
+  localStorage.setItem('theme', 'dark')
 } else {
   document.body.classList.toggle('light-theme')
+  localStorage.setItem('theme', 'light')
 }
 
 themeToggle.addEventListener('click', function () {
   let theme
   document.body.classList.toggle('dark-theme')
   document.body.classList.toggle('light-theme')
-  if (currentTheme == 'dark') {
+  if (document.body.classList.contains('light-theme')) {
     theme = 'light'
   } else {
     theme = 'dark'
