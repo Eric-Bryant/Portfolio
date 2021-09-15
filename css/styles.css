@@ -7,6 +7,8 @@ body.light-theme {
   --primarySurfaceContrast: #111111;
   --primarySurfaceButtons: var(--primary);
   --primarySurfaceButtonsHover: var(--secondary);
+  --secondarySurface: #ffffff;
+  --secondarySurfaceContrast: #111111;
   --light: #ffffff;
   --dark: #111111;
 }
@@ -19,6 +21,8 @@ body.dark-theme {
   --primarySurfaceContrast: #ffffff;
   --primarySurfaceButtons: var(--secondary);
   --primarySurfaceButtonsHover: #143a6c;
+  --secondarySurface: #202020;
+  --secondarySurfaceContrast: #b3b3b3;
   --light: #ffffff;
   --dark: #111111;
 }
@@ -46,7 +50,6 @@ body {
 }
 
 button {
-  font-family: 'Montserrat', sans-serif;
   cursor: pointer;
 }
 
@@ -278,7 +281,7 @@ picture {
 }
 
 .dark-theme .mobile-menu ul {
-  background: #202020;
+  background: var(--secondarySurface);
 }
 
 .mobile-menu li a {
@@ -562,7 +565,8 @@ a.btn:hover,
   padding: 0.5rem;
   border: 1px solid;
   border-radius: 4px;
-  color: var(--dark);
+  background: var(--secondarySurface);
+  color: var(--secondarySurfaceContrast);
   font-weight: 500;
   font-size: 0.875rem;
 }
