@@ -7,7 +7,7 @@ body.light-theme {
   --primarySurfaceContrast: #111111;
   --primarySurfaceButtons: var(--primary);
   --primarySurfaceButtonsHover: var(--secondary);
-  --secondarySurface: #ffffff;
+  --secondarySurface: #efefef;
   --secondarySurfaceContrast: #111111;
   --light: #ffffff;
   --dark: #111111;
@@ -44,7 +44,6 @@ body {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  margin: 0;
   color: var(--primarySurfaceContrast);
   background: var(--primarySurface);
 }
@@ -264,23 +263,12 @@ picture {
   }
 }
 
-.mobile-navigation svg path {
-  fill: var(--light);
-}
-
 .mobile-navigation .menu-toggle {
   line-height: 0;
   height: 1.25rem;
 }
 
 .mobile-menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background: var(--primarySurface);
-}
-
-.dark-theme .mobile-menu ul {
   background: var(--secondarySurface);
 }
 
