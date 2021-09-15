@@ -551,7 +551,7 @@ a.btn:hover,
   font-family: 'Montserrat', sans-serif;
   width: 100%;
   padding: 0.5rem;
-  border: 1px solid;
+  border: 1px solid transparent;
   border-radius: 4px;
   background: var(--secondarySurface);
   color: var(--secondarySurfaceContrast);
