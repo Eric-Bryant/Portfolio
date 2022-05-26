@@ -1,5 +1,4 @@
-body,
-body.light-theme {
+:root {
   --primary: #143a6c;
   --primaryContrast: #90bedb;
   --secondary: #14666c;
@@ -9,20 +8,15 @@ body.light-theme {
   --primarySurfaceButtonsHover: var(--secondary);
   --secondarySurface: #efefef;
   --secondarySurfaceContrast: #111111;
-  --light: #ffffff;
-  --dark: #111111;
-}
-
-body.dark-theme {
-  --primary: #181818;
-  --primaryContrast: #57d5ea;
-  --secondary: #14666c;
-  --primarySurface: #121212;
-  --primarySurfaceContrast: #ffffff;
-  --primarySurfaceButtons: var(--secondary);
-  --primarySurfaceButtonsHover: #143a6c;
-  --secondarySurface: #202020;
-  --secondarySurfaceContrast: #b3b3b3;
+  --darkPrimary: #181818;
+  --darkPrimaryContrast: #57d5ea;
+  --darkSecondary: #14666c;
+  --darkPrimarySurface: #121212;
+  --darkPrimarySurfaceContrast: #ffffff;
+  --darkPrimarySurfaceButtons: var(--secondary);
+  --darkPrimarySurfaceButtonsHover: #143a6c;
+  --darkSecondarySurface: #202020;
+  --darkSecondarySurfaceContrast: #b3b3b3;
   --light: #ffffff;
   --dark: #111111;
 }
@@ -46,6 +40,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: var(--primarySurfaceContrast);
   background: var(--primarySurface);
+}
+
+body.dark-theme {
+  color: var(--darkPrimarySurfaceContrast);
+  background:  var(--darkPrimarySurface);
 }
 
 button {
@@ -183,6 +182,10 @@ picture {
   top: 0;
 }
 
+.dark-theme .navigation-wrapper {
+  background: var(--darkPrimary);
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -227,6 +230,10 @@ picture {
   color: var(--primaryContrast);
 }
 
+.dark-theme .navigation li a:hover {
+  color: var(--darkPrimaryContrast);
+}
+
 .navigation li:first-child {
   margin: 0 0.5rem 0 0;
 }
@@ -246,6 +253,10 @@ picture {
   overflow: auto;
   box-shadow: 0 2px 5px #11111199;
   transform-origin: top;
+}
+
+.dark-theme .mobile-menu {
+  background: var(--darkPrimarySurface);
 }
 
 @media screen and (max-width: 767px) {
@@ -272,6 +283,10 @@ picture {
   background: var(--secondarySurface);
 }
 
+.dark-theme .mobile-menu ul {
+  background: var(--darkSecondarySurface);
+}
+
 .mobile-menu li a {
   transition: 0.3s ease all;
   display: block;
@@ -281,12 +296,16 @@ picture {
   font-weight: 600;
 }
 
+.dark-theme .mobile-menu li a {
+  color: var(--darkPrimarySurfaceContrast);
+}
+
 .mobile-menu li a:focus {
   color: var(--primary);
 }
 
 .dark-theme .mobile-menu li a:focus {
-  color: var(--primaryContrast);
+  color: var(--darkPrimaryContrast);
 }
 
 .menu-toggle span {
@@ -310,6 +329,10 @@ picture {
 
 .menu-toggle.open span {
   background: var(--primaryContrast);
+}
+
+.dark-theme .menu-toggle.open span {
+  background: var(--darkPrimaryContrast);
 }
 
 .menu-toggle span:nth-child(1) {
@@ -410,6 +433,10 @@ picture {
   fill: var(--primaryContrast);
 }
 
+.dark-theme .social-links a:hover svg path {
+  fill: var(--darkPrimaryContrast);
+}
+
 .two-col {
   display: flex;
   flex-wrap: wrap;
@@ -430,6 +457,10 @@ picture {
   color: var(--primarySurfaceContrast);
 }
 
+.dark-theme .project__details h3 {
+  color: var(--darkPrimarySurfaceContrast);
+}
+
 .project__details a {
   text-decoration: none;
   color: var(--primarySurfaceContrast);
@@ -437,12 +468,16 @@ picture {
   transition: 0.3s ease all;
 }
 
+.dark-theme .project__details a {
+  color: var(--darkPrimarySurfaceContrast);
+}
+
 .project__details a:not(.btn):hover {
   color: var(--secondary);
 }
 
 .dark-theme .project__details a:not(.btn):hover {
-  color: var(--primaryContrast);
+  color: var(--darkPrimaryContrast);
 }
 
 @media screen and (min-width: 768px) {
@@ -497,11 +532,24 @@ a.btn,
   border: 1px solid var(--primarySurfaceButtons);
 }
 
+.dark-theme a.btn,
+.dark-theme .btn {
+  background: var(--darkPrimarySurfaceButtons);
+  border: 1px solid var(--darkPrimarySurfaceButtons);
+}
+
 a.btn:hover,
 .btn:hover {
   color: var(--light);
   background: var(--primarySurfaceButtonsHover);
   border-color: var(--primarySurfaceButtonsHover);
+}
+
+.dark-theme a.btn:hover,
+.dark-theme .btn:hover {
+  color: var(--light);
+  background: var(--darkPrimarySurfaceButtonsHover);
+  border-color: var(--darkPrimarySurfaceButtonsHover);
 }
 
 #theme-toggle.btn {
@@ -540,10 +588,19 @@ a.btn:hover,
   color: var(--primarySurfaceContrast);
 }
 
+.dark-theme .contact-form {
+  background: var(--darkPrimarySurface);
+  color: var(--darkPrimarySurfaceContrast);
+}
+
 .contact-form label {
   font-size: 0.875rem;
   font-weight: 700;
   color: var(--primarySurfaceContrast);
+}
+
+.dark-theme .contact-form label {
+  color: var(--darkPrimarySurfaceContrast);
 }
 
 .contact-form input,
@@ -557,6 +614,12 @@ a.btn:hover,
   color: var(--secondarySurfaceContrast);
   font-weight: 500;
   font-size: 0.875rem;
+}
+
+.dark-theme .contact-form input,
+.dark-theme .contact-form textarea {
+  background: var(--darkSecondarySurface);
+  color: var(--darkSecondarySurfaceContrast);
 }
 
 .contact-form button[type='submit'] {
@@ -575,17 +638,32 @@ a.btn:hover,
   cursor: pointer;
 }
 
+.dark-theme .contact-form button[type='submit'] {
+  background: var(--darkPrimarySurfaceButtons);
+  border: 1px solid var(--darkPrimarySurfaceButtons);
+}
+
 .contact-form button[type='submit']:hover {
   color: var(--light);
   background: var(--primarySurfaceButtonsHover);
   border-color: var(--primarySurfaceButtonsHover);
 }
+
+.dark-theme .contact-form button[type='submit']:hover {
+  background: var(--darkPrimarySurfaceButtonsHover);
+  border-color: var(--darkPrimarySurfaceButtonsHover);
+}
+
 .contact-form button[type='submit']:focus {
   transform: translateY(-1px);
 }
 
 .footer-wrapper {
   background: var(--primary);
+}
+
+.dark-theme .footer-wrapper {
+  background: var(--darkPrimary);
 }
 
 .footer-wrapper .copyright {

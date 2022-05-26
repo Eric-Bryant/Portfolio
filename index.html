@@ -156,7 +156,7 @@
         <div class="container container--tabletWidth">
             <h2 class="text-center">Contact Eric</h2>
             <p class="text-center">Questions or trying to get in touch? Let me know using the form below!</p>
-            <form class="contact-form" name="contact" netlify>
+            <form class="contact-form" name="contact" netlify data-netlify-recaptcha="true">
                 <p>
                     <label>Name <span>*</span><br />
                         <input type="text" name="name" required /></label>
@@ -170,6 +170,7 @@
                         <textarea rows="4" name="message" required></textarea>
                     </label>
                 </p>
+                <div data-netlify-recaptcha="true"></div>
                 <p>
                     <button type="submit">Submit</button>
                 </p>
