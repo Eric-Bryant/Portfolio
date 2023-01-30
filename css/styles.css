@@ -44,7 +44,7 @@ body {
 
 body.dark-theme {
   color: var(--darkPrimarySurfaceContrast);
-  background:  var(--darkPrimarySurface);
+  background: var(--darkPrimarySurface);
 }
 
 button {
@@ -112,6 +112,7 @@ p:not(:last-child) {
 img,
 picture {
   max-width: 100%;
+  height: auto;
 }
 
 .container {
