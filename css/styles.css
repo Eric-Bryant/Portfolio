@@ -385,11 +385,11 @@ picture {
 }
 
 .webp .hero-section {
-  background: url('images/webp/hero-background.webp');
+  background: url('/images/webp/hero-background.webp');
 }
 
 .no-webp .hero-section {
-  background: url('images/hero-background.jpg');
+  background: url('/images/hero-background.jpg');
 }
 
 .overlay {
@@ -572,7 +572,7 @@ a.btn:hover,
 }
 
 .contact-section {
-  background: url('images/space.jpg');
+  background: url('/images/space.jpg');
   background-size: cover;
   position: relative;
   color: var(--light);
