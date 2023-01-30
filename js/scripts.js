@@ -6,6 +6,9 @@ const mobileMenuItems = Array.from(document.querySelectorAll('.mobile-menu a'))
 const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)')
 const currentTheme = localStorage.getItem('theme')
 const themeToggle = document.querySelector('#theme-toggle')
+const copyrightYear = document.querySelector('#copyright-year')
+
+copyrightYear.textContent = new Date().getFullYear()
 
 if (!currentTheme) {
   if (prefersDarkScheme.matches) {
